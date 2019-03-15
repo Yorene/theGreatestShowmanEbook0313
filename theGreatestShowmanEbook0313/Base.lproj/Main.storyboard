@@ -1,24 +1,310 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zv0-DG-XOb">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Plot-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="theGreatestShowmanEbook0313" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0NU-7r-Q0k">
+                                <rect key="frame" x="171" y="151" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Childhood"/>
+                                <connections>
+                                    <segue destination="MFc-yE-ekp" kind="show" id="elm-L8-cxf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwm-Od-aHT">
+                                <rect key="frame" x="151" y="325" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Barnum's Circus"/>
+                                <connections>
+                                    <segue destination="cZH-W1-GcD" kind="show" id="7uH-kD-WG4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAS-Gg-ka5">
+                                <rect key="frame" x="185" y="487" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Family"/>
+                                <connections>
+                                    <segue destination="bxc-jt-mki" kind="show" id="TjT-97-fc8"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Plot" id="b7m-av-blb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1985.5072463768117" y="133.25892857142856"/>
+        </scene>
+        <!--Cast-->
+        <scene sceneID="gtz-8j-hI8">
+            <objects>
+                <viewController id="km2-GW-O6P" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="326-1H-uJe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.69529145956039429" green="0.9287450909614563" blue="0.69281309843063354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Mb6-IK-7hK"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cast" image="castBarIcon" id="3gF-k0-d6b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n4t-hS-8uN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1171" y="1155"/>
+        </scene>
+        <!--Lyrics-->
+        <scene sceneID="gLT-Ff-SdT">
+            <objects>
+                <viewController id="Y7R-QX-vih" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qDA-Cd-p5V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.73988968133926392" green="0.65765929222106934" blue="0.92634809017181396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ADw-mk-vCv"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Lyrics" image="lyricsBar" id="BQt-XW-FN0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEu-UZ-n4v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1184" y="1832"/>
+        </scene>
+        <!--Family-->
+        <scene sceneID="QlU-5v-DAT">
+            <objects>
+                <viewController id="bxc-jt-mki" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6XK-fP-uDz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZRM-LJ-NBg">
+                                <rect key="frame" x="87" y="203" width="240" height="551"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Barnum retreats to a local bar where his troupe find him and explain that despite their disappointments, they still consider themselves a family that needs him. An inspired Barnum resolves to start a new show and not let ambition overtake his loved ones anymore ("From Now On"). Meanwhile, Carlyle wakes in a hospital with Wheeler by his side. Barnum finds his wife and they mend their relationship.
+
+Faced with the financial difficulty of rebuilding the circus, the recovering Carlyle steps in offering to use his earnings from his share of the circus's profits to rebuild it under the condition of becoming a full partner which Barnum happily accepts. As rebuilding the circus in its original location would be too expensive, Barnum transforms it into an open-air tent circus by the docks.
+
+The revamped circus is a huge success ("The Greatest Show (Reprise)"). Barnum gives full control of the show to Carlyle, so he can focus on his family.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="w1R-Ud-0en"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Family" id="eHA-aO-iOF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6xI-Fq-qPi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2801" y="846"/>
+        </scene>
+        <!--Childhood-->
+        <scene sceneID="Igc-lj-60S">
+            <objects>
+                <viewController id="MFc-yE-ekp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="674-Ja-hjF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3rC-dQ-I9T">
+                                <rect key="frame" x="87" y="189" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">In a flashback to Barnum's childhood where he and his tailor father Philo work for the Hallett family, he becomes infatuated with their daughter Charity after making her laugh. Though Charity is being sent to finishing school, Barnum reassures her that they will not be separated. The two keep in touch through letters until they meet again in adulthood ("A Million Dreams"), eventually marrying and raising two daughters, Caroline and Helen, in New York City. They live a humble life; though Charity is happy, Barnum craves more.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="XCb-KW-XsU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Childhood" id="srs-OM-qiK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CXO-Sy-zGZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1890" y="-535"/>
+        </scene>
+        <!--Barnum's Circus-->
+        <scene sceneID="ibU-Xt-1qY">
+            <objects>
+                <viewController id="cZH-W1-GcD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eUC-Dl-zva">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsg-CW-3Gd">
+                                <rect key="frame" x="107" y="201" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title=" Barnum's American Museum"/>
+                                <connections>
+                                    <segue destination="TvF-C2-ier" kind="show" id="aBd-zT-RPt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQm-LY-JiD">
+                                <rect key="frame" x="166" y="322" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Upper class"/>
+                                <connections>
+                                    <segue destination="0fs-gl-llz" kind="show" id="3WF-lk-81l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2b-6L-OqK">
+                                <rect key="frame" x="178" y="496" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Downhill"/>
+                                <connections>
+                                    <segue destination="HoM-SW-VHu" kind="show" id="p9w-WV-PrK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Tr1-i6-7Bi"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Barnum's Circus" id="mGD-Ac-KWf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q4C-lY-ads" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2801.449275362319" y="133.25892857142856"/>
+        </scene>
+        <!--Barnum's American Museum-->
+        <scene sceneID="9ea-iV-7C5">
+            <objects>
+                <viewController id="TvF-C2-ier" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4s7-ka-KnH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Wg1-nk-URi">
+                                <rect key="frame" x="99" y="216" width="240" height="417"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Barnum loses his job as a clerk at a shipping company after the company goes bankrupt, and returns home for Caroline's birthday ("A Million Dreams (Reprise)"). In a daring risk, he takes out a large loan from a bank, deceiving them into accepting his former employer's lost ships as collateral. He uses this loan to buy Barnum's American Museum in downtown Manhattan, an attraction showcasing various wax models. Initially, sales are slow. On the suggestion of his children to showcase something "alive", Barnum searches for "freaks" to serve as performers for his museum ("Come Alive"). This attracts a large audience despite protests and poor reviews from James Gordon Bennett, prompting Barnum to rename his venture "Barnum's Circus."</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BfO-kN-C10"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Barnum's American Museum" id="R36-B4-B38"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ue3-ae-LMj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3510.144927536232" y="133.25892857142856"/>
+        </scene>
+        <!--Upper Class-->
+        <scene sceneID="qie-f9-pIk">
+            <objects>
+                <viewController id="0fs-gl-llz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gNK-4W-hkw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HMa-Dx-kb9">
+                                <rect key="frame" x="87" y="223" width="240" height="434"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Searching for ways to further his reputation amongst the upper class, Barnum meets playwright Phillip Carlyle and convinces him to join his venture ("The Other Side"). Carlyle is mesmerized by the African American trapeze artist Anne Wheeler, but he hides his feelings. During a trip, Carlyle arranges for Barnum and his troupe to meet Queen Victoria. Afterwards, Barnum meets famed Swedish singer Jenny Lind, whom he convinces to perform in America with him serving as her manager. Lind's first American performance is a rousing success ("Never Enough"). As Barnum gains favor with the aristocratic patrons, he begins to distance himself from his original troupe as he advises them to work on tonight's show. Dejected, they decide to stand against their local harassers ("This Is Me").</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="a3h-Fr-R1f"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Upper Class" id="TvN-ia-2wa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2v7-it-Xt5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4221.739130434783" y="133.25892857142856"/>
+        </scene>
+        <!--Downhill-->
+        <scene sceneID="Iqr-6M-CVX">
+            <objects>
+                <viewController id="HoM-SW-VHu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g2i-o5-UEB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i66-hd-ouH">
+                                <rect key="frame" x="87" y="194" width="240" height="668"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Carlyle and Wheeler attend the theater together one night only to run into Carlyle's parents, who chastise Carlyle for "parading around with the help." After Wheeler runs off, Carlyle angrily berates them, then chases Wheeler and tries to convince her that they can be together, but she rejects him despite her feelings for him ("Rewrite the Stars"). As Barnum takes Lind on a US tour, Charity feels isolated from her husband as she stays home with their daughters ("Tightrope"). While on tour, Lind begins falling in love with Barnum. When he refuses her advances, she threatens to quit and orchestrates a kiss from him at the end of her last show, which is photographed by the press ("Never Enough (Reprise)").
+
+Barnum returns home to find his circus on fire, caused by a fight between the protesters and the troupe. Carlyle runs into the burning building, believing that Wheeler is still inside, and is rescued by Barnum amid the chaos, suffering serious injuries. The next day, Barnum gets word from a sympathetic Bennett that the culprits have been caught, Lind canceled her tour after her, and Barnum's "scandal." Barnum's mansion is foreclosed upon and Charity takes Caroline and Helen to her parents' home.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Daz-1s-Mls"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Downhill" id="6tX-NL-qqK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t4t-m6-CAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4949.275362318841" y="133.25892857142856"/>
+        </scene>
+        <!--Plot-->
+        <scene sceneID="atp-yN-bOs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h2m-kZ-FiB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Plot" image="plotBar" id="fzE-6M-dPz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dQu-5V-ym2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wSE-Js-yaY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kzi-hW-eqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1182.608695652174" y="133.92857142857142"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0zc-vS-UI9">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Zv0-DG-XOb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yyh-Mx-K4F">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="h2m-kZ-FiB" kind="relationship" relationship="viewControllers" id="Lgk-f8-81U"/>
+                        <segue destination="km2-GW-O6P" kind="relationship" relationship="viewControllers" id="QXE-a2-M21"/>
+                        <segue destination="Y7R-QX-vih" kind="relationship" relationship="viewControllers" id="7gU-3i-kyk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="av2-hJ-SEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="272.46376811594206" y="133.92857142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="castBarIcon" width="25" height="25"/>
+        <image name="lyricsBar" width="30" height="30"/>
+        <image name="plotBar" width="30" height="30"/>
+    </resources>
 </document>
